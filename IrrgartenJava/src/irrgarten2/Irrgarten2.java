@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package irrgarten2;
+import modelo.Dice;
+import modelo.Shield;
 
 /**
  *
@@ -14,7 +16,11 @@ public class Irrgarten2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+          Shield escudo1 = new Shield(2,5);
+          System.out.println(escudo1.toString());
+          
+          Shield escudo2 = new Shield(Dice.shieldPower(), Dice.usesLeft());
+          System.out.println(escudo2.toString());
+    }       
     
 }

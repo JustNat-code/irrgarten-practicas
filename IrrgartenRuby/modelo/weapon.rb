@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 module Modelo
   class Weapon
-
+    attr_accessor :power
     def initialize(power, uses)
       @power = power
       @uses = uses
